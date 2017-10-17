@@ -1832,6 +1832,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		
 		function restart() {
 			tl.play(0);
+			blink();
 		}
 		  
 		  
@@ -1840,6 +1841,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 			var i = 0;
 			for (currObj in z) {
 			  if(z[currObj] && typeof z[currObj] == "object" && i>=56){
+				  TweenMax.set(z[currObj], {scaleX:1, scaleY:1});
 				  TweenMax.from(z[currObj], 0.2, {x:0, y:0, scaleX:0, scaleY:0, ease:Power0.easeNone, delay:(56-i)*0.0+time2+2.4});
 				  TweenMax.to(z[currObj], 0.2, {scaleX:0, scaleY:0, ease:Power0.easeNone, delay:(56-i)*0.0+time2+2.6});
 				  }
