@@ -1745,9 +1745,9 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		var r = this;
 		var count = 1;
 		var repeat = 200;
-		var time2 = 2.5;
-		var time3 = time2+3.0;
-		var time4 = time3+4.0;
+		var time2 = 3.0;
+		var time3 = time2+3.5;
+		var time4 = time3+4.5;
 		
 		var ease = Power0.easeNone
 		TweenMax.to(r.laptop.cvc.l1, 0.3, {alpha:0, yoyo:true, repeat:-1, repeatDelay:0.0, ease:ease}, 0.0)
@@ -1812,7 +1812,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		  
 		  
 		  .call(replay)
-		  .to(r.blk, 0.6, {alpha:1, ease:Power0.easeNone, onComplete:restart}, 14)
+		  .to(r.blk, 0.6, {alpha:1, ease:Power0.easeNone, onComplete:restart}, 17)
 		  ;
 		
 		
